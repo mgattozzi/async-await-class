@@ -2,10 +2,11 @@
 
 If you want to run the examples you'll need to have `cargo` and `rustc` installed:
 
-1. It's recommended that you pin the directory to the `nightly-2018-07-14` compiler so the examples work
-2. `cargo run --bin waker`
-3. `cargo run --bin timer`
-4. `cargo run --bin tiny`
+1. It's recommended that you pin the directory to the correct nightly compiler so
+   the examples work. To do this, create a file `rust-toolchain` with the contents
+   `nightly-2018-08-18` 
+2. `cargo run --bin timer`
+3. `cargo run --bin executor`
 
 ## License
 
