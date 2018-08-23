@@ -63,7 +63,7 @@ impl Future for MyTimerFuture {
                 // This will involve changing `shared_state`.
                 let mut shared_state = shared_state.lock().unwrap();
                 shared_state.completed = true;
-                shared_state.waker.as_mut().unwrap().wake();
+                shared_state.waker.as_ref().unwrap().wake();
                 // END FIXME
             });
         }
