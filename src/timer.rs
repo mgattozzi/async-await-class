@@ -2,7 +2,7 @@
 
 use std::future::Future;
 use std::marker::Unpin;
-use std::mem::PinMut;
+use std::pin::PinMut;
 use std::sync::{Arc, Mutex};
 use std::task::{self, Poll, Waker};
 use std::thread; // You'll want to use `spawn` and `sleep`.
