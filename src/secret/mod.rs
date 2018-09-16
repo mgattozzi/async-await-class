@@ -3,7 +3,7 @@
 use std::time::{Duration, Instant};
 use std::future::{Future, FutureObj};
 use std::marker::Unpin;
-use std::mem::PinMut;
+use std::pin::PinMut;
 use std::sync::{Arc, Mutex, Condvar};
 use std::task::{
     self,

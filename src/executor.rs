@@ -1,7 +1,7 @@
 #![feature(async_await, await_macro, futures_api, pin, arbitrary_self_types)]
 
 use std::future::{Future, FutureObj};
-use std::mem::PinMut;
+use std::pin::PinMut;
 use std::sync::{Arc, Mutex};
 use std::sync::mpsc::{sync_channel, SyncSender, SendError, Receiver};
 use std::task::{
